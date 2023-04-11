@@ -12,14 +12,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# from function import calculate_salary
-
-# def main():
-#     work_day = int(input("Enter work days: "))
-#     ot_hour = int(input("Enter OT hours: "))
-#     late_day = int(input("Enter late days: "))
-#     print(f"Monthly salary: {calculate_salary(work_day, ot_hour, late_day):,.2f} THB")
-
-# if __name__ == '__main__':
-#     main()
