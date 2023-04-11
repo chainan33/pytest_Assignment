@@ -31,4 +31,4 @@ def test_calculateMonth_case7():
 
 def test_calculateMonth_case8():
     #ไม่มีการทำงาน ไม่มี OT ไม่มีเลท
-    assert calculateMonth(0, 0, 0) == 11720
+    assert calculateMonth(0, 0, 0) == 0
