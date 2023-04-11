@@ -3,11 +3,12 @@
 
 def calculateMonth(daysWorked: int, otHours: int, daysLate: int) -> float:
     # validate input
-    if daysWorked <= 0 or otHours < 0 or daysLate < 0:
+    if daysWorked < 0 or otHours < 0 or daysLate < 0:
         raise ValueError("Invalid input")
 
     #จำนวนวันที่ทำงาน
-    salary_days_worked = daysWorked * 340
+    if daysWorked >= 0 :
+        salary_days_worked = daysWorked * 340
 
     #จำนวน ชม ที่ทำ OT
     if otHours <= 3:
