@@ -23,6 +23,8 @@ def calculateMonth(daysWorked: int, otHours: int, daysLate: int) -> float:
             salary_ot_bonus = daysLate = 1000
         else :
             salary_ot_bonus = daysLate = 0
+    else :
+        salary_ot_bonus = daysLate = 0
 
 
 
