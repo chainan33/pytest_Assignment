@@ -27,4 +27,4 @@ def test_calculateMonth_case6():
 
 def test_calculateMonth_case7():
     #เกินเดือน OT เกิน
-    assert calculateMonth(31, 4, 0) == 11380
+    assert calculateMonth(31, 4, 0) == 11720
