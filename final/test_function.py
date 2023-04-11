@@ -23,8 +23,12 @@ def test_calculateMonth_case5():
 
 def test_calculateMonth_case6():
     #เกินเดือน มีเลทงาน
-    assert calculateMonth(31, 0, 1) == 10540
+    assert calculateMonth(30, 0, 1) == 10200
 
 def test_calculateMonth_case7():
     #เกินเดือน OT เกิน
-    assert calculateMonth(31, 4, 0) == 11720
+    assert calculateMonth(30, 4, 0) == 11380
+
+def test_calculateMonth_case8():
+    #ไม่มีการทำงาน ไม่มี OT ไม่มีเลท
+    assert calculateMonth(0, 0, 0) == 11720
